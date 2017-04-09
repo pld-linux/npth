@@ -11,6 +11,7 @@ License:	LGPL v3+ or GPL v2+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/npth/%{name}-%{version}.tar.bz2
 # Source0-md5:	efe1524c53670b5755dc27893d2d68a0
+URL:		https://www.gnupg.org/software/npth/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
