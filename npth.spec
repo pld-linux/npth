@@ -5,12 +5,12 @@
 Summary:	nPth - New GNU Portable Threads Library
 Summary(pl.UTF-8):	nPth - nowa przenośna biblioteka wątków GNU
 Name:		npth
-Version:	1.3
+Version:	1.4
 Release:	1
-License:	LGPL v3+ or GPL v2+
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/npth/%{name}-%{version}.tar.bz2
-# Source0-md5:	efe1524c53670b5755dc27893d2d68a0
+# Source0-md5:	76cef5542e0db6a339cf960641ed86f8
 URL:		https://www.gnupg.org/software/npth/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
