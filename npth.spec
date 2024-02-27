@@ -5,12 +5,12 @@
 Summary:	nPth - New GNU Portable Threads Library
 Summary(pl.UTF-8):	nPth - nowa przenośna biblioteka wątków GNU
 Name:		npth
-Version:	1.6
+Version:	1.7
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/npth/%{name}-%{version}.tar.bz2
-# Source0-md5:	375d1a15ad969f32d25f1a7630929854
+# Source0-md5:	286274d0106ec408efebe4a399975b11
 URL:		https://www.gnupg.org/software/npth/
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -88,11 +88,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/npth-config
 %attr(755,root,root) %{_libdir}/libnpth.so
 %{_libdir}/libnpth.la
 %{_includedir}/npth.h
 %{_aclocaldir}/npth.m4
+%{_pkgconfigdir}/npth.pc
 
 %if %{with static_libs}
 %files static
