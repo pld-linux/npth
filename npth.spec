@@ -12,6 +12,7 @@ Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/npth/%{name}-%{version}.tar.bz2
 # Source0-md5:	375d1a15ad969f32d25f1a7630929854
 URL:		https://www.gnupg.org/software/npth/
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
