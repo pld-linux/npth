@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	static_libs	# don't build static libraries
+%bcond_without	static_libs	# static library
 #
 Summary:	nPth - New GNU Portable Threads Library
 Summary(pl.UTF-8):	nPth - nowa przenośna biblioteka wątków GNU
@@ -74,6 +74,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# obsoleted by pkg-config
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libnpth.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -89,7 +92,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libnpth.so
-%{_libdir}/libnpth.la
 %{_includedir}/npth.h
 %{_aclocaldir}/npth.m4
 %{_pkgconfigdir}/npth.pc
