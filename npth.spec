@@ -9,7 +9,7 @@ Version:	1.7
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	ftp://ftp.gnupg.org/gcrypt/npth/%{name}-%{version}.tar.bz2
+Source0:	https://www.gnupg.org/ftp/gcrypt/npth/%{name}-%{version}.tar.bz2
 # Source0-md5:	286274d0106ec408efebe4a399975b11
 URL:		https://www.gnupg.org/software/npth/
 BuildRequires:	automake
